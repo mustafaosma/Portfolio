@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustafa OSMA | Dijital Portfolyo</title>
+  <meta name="description" content="Mustafa Osma kişisel dijital portfolyo sitesi" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ozel-imlec"></div>
+
+  <header class="ust-alan">
+    <nav class="menu kapsayici">
+      <a href="#anasayfa" class="logo">MO</a>
+      <ul class="menu-listesi">
+        <li><a href="#anasayfa">Ana Sayfa</a></li>
+        <li><a href="#egitim">Yetenekler ve Eğitim</a></li>
+        <li><a href="#projeler">Projeler</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+      <button id="temaButonu" class="tema-butonu" aria-label="Tema değiştir">🌙 Tema Değiştir</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="anasayfa" class="hero kapsayici bolum">
+      <div class="hero-yazi">
+        <p class="etiket">Dijital Portfolyo</p>
+        <h1><span id="daktiloYazisi"></span><span class="imlec">|</span></h1>
+        <p class="aciklama">
+          Ben Mustafa Osma. Bilgisayar Programcılığı öğrencisiyim. Web geliştirme,
+          kullanıcı arayüzü tasarımı ve yazılım projeleri geliştirme alanlarında kendimi
+          geliştirmeyi hedefliyorum.
+        </p>
+        <div class="hero-butonlar">
+          <a href="#projeler" class="buton birincil">Projeleri Gör</a>
+          <a href="#iletisim" class="buton ikincil">İletişime Geç</a>
+        </div>
+      </div>
+
+      <div class="hero-gorsel">
+        <img src="images/profil.jpeg" alt="Mustafa profil fotoğrafı" class="profil-resmi" />
+      </div>
+    </section>
+
+    <section id="egitim" class="kapsayici bolum">
+      <div class="bolum-baslik">
+        <h2>Yetenekler ve Eğitim</h2>
+        <p>Okuduğum bölüm, aldığım dersler ve teknik yetkinliklerim</p>
+      </div>
+
+      <div class="egitim-kartlari">
+        <article class="bilgi-karti">
+          <h3>Eğitim Bilgileri</h3>
+          <ul>
+            <li><strong>Bölüm:</strong> Bilgisayar Programcılığı</li>
+            <li><strong>Hedef:</strong> Frontend ve web tabanlı uygulama geliştirme alanında uzmanlaşmak</li>
+            <li><strong>İlgi Alanları:</strong> HTML, CSS, JavaScript, kullanıcı arayüzü tasarımı</li>
+          </ul>
+        </article>
+
+        <article class="bilgi-karti">
+          <h3>Aldığım Dersler</h3>
+          <ul>
+            <li>İnternet Programcılığı 1</li>
+            <li>Programlama Temelleri</li>
+            <li>Görsel Programlama</li>
+            <li>Veri Tabanı</li>
+            <li>Web Tasarımı</li>
+            <li>Nesne Tabanlı Programlama</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="yetenek-alani">
+        <div class="yetenek-satiri">
+          <div class="yetenek-ust">
+            <span>HTML</span>
+            <span>%90</span>
+          </div>
+          <div class="bar-dis"><div class="bar-ic" data-genislik="90"></div></div>
+        </div>
+
+        <div class="yetenek-satiri">
+          <div class="yetenek-ust">
+            <span>CSS</span>
+            <span>%85</span>
+          </div>
+          <div class="bar-dis"><div class="bar-ic" data-genislik="85"></div></div>
+        </div>
+
+        <div class="yetenek-satiri">
+          <div class="yetenek-ust">
+            <span>JavaScript</span>
+            <span>%75</span>
+          </div>
+          <div class="bar-dis"><div class="bar-ic" data-genislik="75"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projeler" class="kapsayici bolum">
+      <div class="bolum-baslik">
+        <h2>Projeler</h2>
+        <p>JavaScript dizisinden dinamik olarak listelenen proje galerisi</p>
+      </div>
+
+      <div class="filtre-alani">
+        <button class="filtre-dugmesi aktif" data-kategori="hepsi">Tümü</button>
+        <button class="filtre-dugmesi" data-kategori="web">Web Projeleri</button>
+        <button class="filtre-dugmesi" data-kategori="mobil">Mobil Projeler</button>
+      </div>
+
+      <div id="projeListesi" class="proje-izgara"></div>
+    </section>
+
+    <section id="iletisim" class="kapsayici bolum">
+      <div class="bolum-baslik">
+        <h2>İletişim</h2>
+        <p>Bana aşağıdaki kanallardan ulaşabilirsiniz</p>
+      </div>
+
+      <div class="iletisim-kartlari">
+        <a class="iletisim-karti" href="mailto:mustafaosma024@gmail.com">
+          <span class="ikon">✉️</span>
+          <div>
+            <h3>E-posta</h3>
+            <p>mustafaosma024@gmail.com</p>
+          </div>
+        </a>
+
+        <a class="iletisim-karti" href="https://github.com/mustafaosma" target="_blank" rel="noreferrer noopener">
+          <span class="ikon">💻</span>
+          <div>
+            <h3>GitHub</h3>
+            <p>github.com/mustafaosma</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="alt-bilgi">
+    <p>© 2026 Mustafa Osma - Dijital Portfolyo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
